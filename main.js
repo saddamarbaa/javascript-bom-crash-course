@@ -216,3 +216,9 @@ console.log(window.scrollY)
 
 console.log(window.location.href)
 console.log(location.href)
+
+
+/*   Lecture #12 - Location Properties - Host, Hash  */
+
+console.log(location.host)
+console.log(location.hash)
