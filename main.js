@@ -241,3 +241,7 @@ console.log(location.hostname + location.pathname + location.search)
 
 
 /*  Lecture #14 - Location Methods - Reload, Replace, Assign  */
+
+/*  Lecture  #15 - History Methods - Back, Forward, Go  */
+
+console.log(history.length)
