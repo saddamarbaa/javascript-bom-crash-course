@@ -203,3 +203,16 @@ console.log("outerWidth  : " + window.outerWidth)
 
 console.log(window.pageXOffset)
 console.log(window.pageYOffset)
+console.log(window.scrollX)
+console.log(window.scrollY)
+
+/*   
+    Lecture  #11 - Window Location Properties - href 
+    - Absolute URL
+    - Page Within The Current Web Page 
+    - Hash Id Within The Current Web Page
+    - Prottocal [ FTP, Mail, File ]
+*/
+
+console.log(window.location.href)
+console.log(location.href)
