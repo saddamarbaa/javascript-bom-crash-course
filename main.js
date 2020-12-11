@@ -157,3 +157,24 @@ function writeNewMeassge() {
 // stopSetInterval.onclick = function() {
 //     clearInterval(loopCallTime)
 // }
+
+
+/*   
+    Lecture #06 - Window Methods - Open
+    window.open(URL, Name Or Attribute, Specification, History Replace)
+*/
+
+let openLink = window.document.getElementById('open')
+
+openLink.style.padding = '10px'
+openLink.style.border = '1px solid skyBlue'
+openLink.style.width = '90px'
+
+// onlick open new window
+openLink.onclick = function() {
+    // open -blank page
+    // window.open("", "", "", "")
+
+    // open google in new window
+    window.open("https://www.google.com")
+}
