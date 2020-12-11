@@ -82,14 +82,12 @@ console.log(window.document.getElementById('firstH2').textContent)
 /*    
     Lecture #04 - Window Methods - setTimeout  
     setTimeout(function(), Milliseconds, param1, param2, param3)
-     clearTimeout(Id Or Number Of setTimeout)
+    clearTimeout(Id Or Number Of setTimeout)
  */
-
 
 setTimeout(function() {
         window.console.log("Hello After 3 seconds")
     }, 3000) // call the function after 3 seconds
-
 
 function writeMeassge() {
     console.log("Hello After 5 seconds")
@@ -108,3 +106,54 @@ let myButton = document.getElementById('click')
 myButton.onclick = function() {
     clearTimeout(myTime)
 }
+
+
+
+/*   
+    Lecture #05 - Window Methods - setInterval
+    setInterval(function(), Milliseconds, param1, param2, param3)
+    clearInterval(Id Or Number Of setInterval)
+*/
+
+let button = window.document.querySelector('button')
+let stopSetInterval = window.document.getElementById('secondClick')
+let countDownButton = window.document.getElementById('countDown')
+
+button.style.padding = '10px'
+countDownButton.style.padding = '10px'
+countDownButton.style.border = '1px solid lightBlue'
+countDownButton.style.width = '90px'
+stopSetInterval.style.padding = '10px'
+
+
+// call the function forever every one second(loop)
+let counterTime = setInterval(countDown, 1000)
+
+// counter function 
+
+function countDown() {
+    //Termination case
+    if (countDownButton.textContent <= 0) {
+        countDownButton.textContent = "Done"
+        countDownButton.style.background = 'red'
+
+        // clearInterval(top the loop)
+        clearInterval(counterTime)
+
+    } else {
+        // decrement by one
+        countDownButton.textContent -= 1
+    }
+}
+
+function writeNewMeassge() {
+    console.log("Hello Every one seconds")
+}
+
+// call the function forever every one second(loop)
+// let loopCallTime = setInterval(writeNewMeassge, 1000)
+
+// function to clearInterval (Stop Interval Loop)
+// stopSetInterval.onclick = function() {
+//     clearInterval(loopCallTime)
+// }
