@@ -238,3 +238,6 @@ console.log(location.pathname)
 
 // wil give us full link
 console.log(location.hostname + location.pathname + location.search)
+
+
+/*  Lecture #14 - Location Methods - Reload, Replace, Assign  */
