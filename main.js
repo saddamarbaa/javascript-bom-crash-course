@@ -24,6 +24,29 @@
    --- Cookies
 
    - Colection Of Objects Control The Broswer
-   - Default Object Of Broser IS Window
-   - All Global Js Object Are Memeber Of Window Object
+   - Default Object Of Browser IS Window
+ 
 */
+
+/*   
+    Lecture -2  Window
+    Window
+    - Window Object Is The Browser Window
+    - Window Object Suported By All Broswer
+    - Window IS The Default Object Of Browser 
+    - All Global Js Object Are Memeber Of Window Object
+*/
+
+// alert('Test')
+// window.alert('Test')
+
+console.log(document.title)
+console.log(window.document.title)
+window.document.title = "new title"
+console.log(window.document.title)
+document.title = "JavaScript DOM "
+console.log(window.document.title)
+console.log(document.getElementById('firstH2').textContent)
+console.log(window.document.getElementById('firstH2').textContent)
+
+// console.log(window.print())
