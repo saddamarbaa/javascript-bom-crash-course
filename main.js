@@ -246,7 +246,7 @@ console.log(location.hostname + location.pathname + location.search)
 
 console.log(history.length)
 
-/*  Lecture #16-  Window Navigator Properties */
+/*  Lecture #16- Window Navigator Properties */
 
 console.log(navigator.appName)
 console.log(navigator.appCodeName)
@@ -256,3 +256,19 @@ console.log(navigator.cookieEnabled)
 console.log(navigator.language)
 console.log(navigator.onLine)
 console.log(navigator.product)
+
+/*  
+     Lecture #17 - Window Screen Properties 
+     - screen.width
+     - screen.height
+     - screen.availHeight
+     - screen.availWidth
+     - screen.colorDepth || screen.pixelDepth
+*/
+
+console.log(screen.width)
+console.log(screen.height)
+console.log(screen.availHeight)
+console.log(screen.availWidth)
+console.log(screen.colorDepth)
+console.log(screen.pixelDepth)
