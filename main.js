@@ -1,7 +1,7 @@
 /* Javascript Dom Crash Course (JS BOM) */
 
 /*   
-   Lecture #01 - BOM Introduction
+  Lecture #01 - BOM Introduction
    What IS BOM
    - Broweser Object Model
 
@@ -30,7 +30,7 @@
 
 
 /*   
-    Lecture #02 -  Window
+   Lecture #02 -  Window
     Window
     - Window Object Is The Browser Window
     - Window Object Suported By All Broswer
@@ -53,7 +53,8 @@ console.log(window.document.getElementById('firstH2').textContent)
 // console.log(window.print())
 
 
-/*    Lecture #03 -  Window Methods - Alert, Prompt, Confirm   */
+/*   Lecture #03 -  Window Methods - Alert, Prompt, Confirm   */
+
 
 // alert('hi\n nice \n to meet \n You')
 // Boolean Yes or Not
@@ -80,10 +81,11 @@ console.log(window.document.getElementById('firstH2').textContent)
 
 
 /*    
-    Lecture #04 - Window Methods - setTimeout  
+   Lecture #04 - Window Methods - setTimeout  
     setTimeout(function(), Milliseconds, param1, param2, param3)
     clearTimeout(Id Or Number Of setTimeout)
  */
+
 
 setTimeout(function() {
         window.console.log("Hello After 3 seconds")
@@ -108,12 +110,12 @@ myButton.onclick = function() {
 }
 
 
-
 /*   
-    Lecture #05 - Window Methods - setInterval
+   Lecture #05 - Window Methods - setInterval
     setInterval(function(), Milliseconds, param1, param2, param3)
     clearInterval(Id Or Number Of setInterval)
 */
+
 
 let button = window.document.querySelector('button')
 let stopSetInterval = window.document.getElementById('secondClick')
@@ -159,10 +161,12 @@ function writeNewMeassge() {
 // }
 
 
+
 /*   
-    Lecture #06 - Window Methods - Open
+   Lecture #06 - Window Methods - Open
     window.open(URL, Name Or Attribute, Specification, History Replace)
 */
+
 
 let openLink = window.document.getElementById('open')
 
@@ -178,3 +182,10 @@ openLink.onclick = function() {
     // open google in new window
     window.open("https://www.google.com")
 }
+
+
+/*   
+   Lecture #07 - Window Methods - scrollBy, scrollTo
+   window.scrollBy(X,Y) // Numbers only in pixels
+   window.scrollTo(X,Y) // Numbers only in pixels
+*/
