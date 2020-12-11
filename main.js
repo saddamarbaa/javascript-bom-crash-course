@@ -198,3 +198,8 @@ console.log("innerHeight : " + window.innerHeight)
 console.log("innerWidth  : " + window.innerWidth)
 console.log("outerHeight : " + window.outerHeight)
 console.log("outerWidth  : " + window.outerWidth)
+
+/*   Lecture #10 - Window Properties - pageXOffset, pageYOffset  */
+
+console.log(window.pageXOffset)
+console.log(window.pageYOffset)
