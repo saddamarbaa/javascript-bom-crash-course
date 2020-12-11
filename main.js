@@ -218,7 +218,23 @@ console.log(window.location.href)
 console.log(location.href)
 
 
-/*   Lecture #12 - Location Properties - Host, Hash  */
+/*  Lecture #12 - Location Properties - Host, Hash  */
 
 console.log(location.host)
 console.log(location.hash)
+
+/*  
+    Lecture #13 - Location Properties - Protocol, Search, Pathname 
+    - HTTP   = HyperText Transfer Protocol
+    - HTTPs  = HyperText Transfer Protocol Secured
+    -File
+    FTP  = File Transfer Protocol
+    MailTo
+*/
+
+console.log(location.protocol)
+console.log(location.search)
+console.log(location.pathname)
+
+// wil give us full link
+console.log(location.hostname + location.pathname + location.search)
