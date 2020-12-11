@@ -1,6 +1,6 @@
 /* Javascript Dom Crash Course (JS BOM) */
 
-/*   
+/*
   Lecture #01 - BOM Introduction
    What IS BOM
    - Broweser Object Model
@@ -8,10 +8,10 @@
    What Can I Do With Dom
    - Js Bom Talks To The Broswe
    - Doing Action Not Related To Page
-   --- Change Url 
+   --- Change Url
    --- BackGround Request
    --- Alert, Confirm, Prompt
-   --- Window Move, Window Open, Window Close 
+   --- Window Move, Window Open, Window Close
    --- Change Text In The State Bar
 
    Bom Information
@@ -28,13 +28,12 @@
    - Default Object Of Browser IS Window
 */
 
-
-/*   
+/*
    Lecture #02 -  Window
     Window
     - Window Object Is The Browser Window
     - Window Object Suported By All Broswer
-    - Window IS The Default Object Of Browser 
+    - Window IS The Default Object Of Browser
     - All Global Js Object Are Memeber Of Window Object
 */
 
@@ -52,9 +51,7 @@ console.log(window.document.getElementById('firstH2').textContent)
 
 // console.log(window.print())
 
-
 /*   Lecture #03 -  Window Methods - Alert, Prompt, Confirm   */
-
 
 // alert('hi\n nice \n to meet \n You')
 // Boolean Yes or Not
@@ -71,7 +68,6 @@ console.log(window.document.getElementById('firstH2').textContent)
 //     console.log("I know Your are not my friend")
 // }
 
-
 // let firstName = prompt("First Name :", "First Name : ")
 // let secondName = prompt("Second Name : ", "Second Name : ")
 // let fullName = firstName + " " + secondName
@@ -79,13 +75,11 @@ console.log(window.document.getElementById('firstH2').textContent)
 // console.log("Your Second Name is :  " + secondName)
 // console.log("Your Full Name is :  " + fullName)
 
-
-/*    
-   Lecture #04 - Window Methods - setTimeout  
+/*
+   Lecture #04 - Window Methods - setTimeout
     setTimeout(function(), Milliseconds, param1, param2, param3)
     clearTimeout(Id Or Number Of setTimeout)
  */
-
 
 setTimeout(function() {
         window.console.log("Hello After 3 seconds")
@@ -109,13 +103,11 @@ myButton.onclick = function() {
     clearTimeout(myTime)
 }
 
-
-/*   
+/*
    Lecture #05 - Window Methods - setInterval
     setInterval(function(), Milliseconds, param1, param2, param3)
     clearInterval(Id Or Number Of setInterval)
 */
-
 
 let button = window.document.querySelector('button')
 let stopSetInterval = window.document.getElementById('secondClick')
@@ -127,11 +119,10 @@ countDownButton.style.border = '1px solid lightBlue'
 countDownButton.style.width = '90px'
 stopSetInterval.style.padding = '10px'
 
-
 // call the function forever every one second(loop)
 let counterTime = setInterval(countDown, 1000)
 
-// counter function 
+// counter function
 
 function countDown() {
     //Termination case
@@ -161,12 +152,10 @@ function writeNewMeassge() {
 // }
 
 
-
-/*   
+/*
    Lecture #06 - Window Methods - Open
     window.open(URL, Name Or Attribute, Specification, History Replace)
 */
-
 
 let openLink = window.document.getElementById('open')
 
@@ -183,8 +172,7 @@ openLink.onclick = function() {
     window.open("https://www.google.com")
 }
 
-
-/*   
+/*
    Lecture #07 - Window Methods - scrollBy, scrollTo
    window.scrollBy(X,Y) // Numbers only in pixels
    window.scrollTo(X,Y) // Numbers only in pixels
@@ -199,17 +187,17 @@ console.log("innerWidth  : " + window.innerWidth)
 console.log("outerHeight : " + window.outerHeight)
 console.log("outerWidth  : " + window.outerWidth)
 
-/*   Lecture #10 - Window Properties - pageXOffset, pageYOffset  */
+/*  Lecture #10 - Window Properties - pageXOffset, pageYOffset  */
 
 console.log(window.pageXOffset)
 console.log(window.pageYOffset)
 console.log(window.scrollX)
 console.log(window.scrollY)
 
-/*   
-    Lecture  #11 - Window Location Properties - href 
+/*
+    Lecture  #11 - Window Location Properties - href
     - Absolute URL
-    - Page Within The Current Web Page 
+    - Page Within The Current Web Page
     - Hash Id Within The Current Web Page
     - Prottocal [ FTP, Mail, File ]
 */
@@ -217,14 +205,13 @@ console.log(window.scrollY)
 console.log(window.location.href)
 console.log(location.href)
 
-
 /*  Lecture #12 - Location Properties - Host, Hash  */
 
 console.log(location.host)
 console.log(location.hash)
 
-/*  
-    Lecture #13 - Location Properties - Protocol, Search, Pathname 
+/*
+    Lecture #13 - Location Properties - Protocol, Search, Pathname
     - HTTP   = HyperText Transfer Protocol
     - HTTPs  = HyperText Transfer Protocol Secured
     -File
@@ -238,7 +225,6 @@ console.log(location.pathname)
 
 // wil give us full link
 console.log(location.hostname + location.pathname + location.search)
-
 
 /*  Lecture #14 - Location Methods - Reload, Replace, Assign  */
 
@@ -257,8 +243,8 @@ console.log(navigator.language)
 console.log(navigator.onLine)
 console.log(navigator.product)
 
-/*  
-     Lecture #17 - Window Screen Properties 
+/*
+     Lecture #17 - Window Screen Properties
      - screen.width
      - screen.height
      - screen.availHeight
@@ -273,8 +259,8 @@ console.log(screen.availWidth)
 console.log(screen.colorDepth)
 console.log(screen.pixelDepth)
 
-/*  
-     Lecture #18-  Cookies 
+/*
+     Lecture #18-  Cookies
     - document.cookie("name = value; expirs = Date; Path = ''")
 */
 
