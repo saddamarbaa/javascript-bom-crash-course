@@ -180,7 +180,7 @@ openLink.onclick = function() {
     // window.open("", "", "", "")
 
     // open google in new window
-    google = window.open("https://www.google.com")
+    window.open("https://www.google.com")
 }
 
 
@@ -190,5 +190,11 @@ openLink.onclick = function() {
    window.scrollTo(X,Y) // Numbers only in pixels
 */
 
-
 /*   Lecture #08 - Window Methods - Stop, Close, Focus  */
+
+/*   Lecture #09 - Window Properties - innerHeight, innerWidth  */
+
+console.log("innerHeight : " + window.innerHeight)
+console.log("innerWidth  : " + window.innerWidth)
+console.log("outerHeight : " + window.outerHeight)
+console.log("outerWidth  : " + window.outerWidth)
