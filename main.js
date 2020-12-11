@@ -272,3 +272,10 @@ console.log(screen.availHeight)
 console.log(screen.availWidth)
 console.log(screen.colorDepth)
 console.log(screen.pixelDepth)
+
+/*  
+     Lecture #18-  Cookies 
+    - document.cookie("name = value; expirs = Date; Path = ''")
+*/
+
+console.log(document.cookie)
