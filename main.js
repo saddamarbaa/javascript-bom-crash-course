@@ -245,3 +245,14 @@ console.log(location.hostname + location.pathname + location.search)
 /*  Lecture  #15 - History Methods - Back, Forward, Go  */
 
 console.log(history.length)
+
+/*  Lecture #16-  Window Navigator Properties */
+
+console.log(navigator.appName)
+console.log(navigator.appCodeName)
+console.log(navigator.appVersion)
+console.log(navigator.platform)
+console.log(navigator.cookieEnabled)
+console.log(navigator.language)
+console.log(navigator.onLine)
+console.log(navigator.product)
