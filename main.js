@@ -53,9 +53,7 @@ console.log(window.document.getElementById('firstH2').textContent)
 // console.log(window.print())
 
 
-/*
-   Lecture #03 -  Window Methods - Alert, Prompt, Confirm
-*/
+/*    Lecture #03 -  Window Methods - Alert, Prompt, Confirm   */
 
 // alert('hi\n nice \n to meet \n You')
 // Boolean Yes or Not
@@ -79,3 +77,34 @@ console.log(window.document.getElementById('firstH2').textContent)
 // console.log("Your First Name is :  " + firstName)
 // console.log("Your Second Name is :  " + secondName)
 // console.log("Your Full Name is :  " + fullName)
+
+
+/*    
+    Lecture #04 - Window Methods - setTimeout  
+    setTimeout(function(), Milliseconds, param1, param2, param3)
+     clearTimeout(Id Or Number Of setTimeout)
+ */
+
+
+setTimeout(function() {
+        window.console.log("Hello After 3 seconds")
+    }, 3000) // call the function after 3 seconds
+
+
+function writeMeassge() {
+    console.log("Hello After 5 seconds")
+}
+
+// call writeMeassge() function After 5 seconds
+// setTimeout(writeMeassge, 5000)
+
+let myTime = setTimeout(writeMeassge, 5000)
+let myButton = document.getElementById('click')
+
+// console.log(myTime)
+// console.log(myButton)
+
+// function to clear the timing out(Stop the setTimeout)
+myButton.onclick = function() {
+    clearTimeout(myTime)
+}
